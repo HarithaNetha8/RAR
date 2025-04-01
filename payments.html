@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+    <style>
+      body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+
+        }
+        .navbar {
+            background-color:#6b5bfd;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .navbar a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            padding: 20px;
+            max-width: 800px;
+            margin: 40px auto;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin: 10px 0 5px;
+            font-weight: bold;
+            color: #555;
+        }
+        input[type="text"], input[type="email"], input[type="tel"], input[type="number"], input[type="date"] {
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            width: 100%;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+        input[type="text"]:focus, input[type="email"]:focus, input[type="tel"]:focus, input[type="number"]:focus, input[type="date"]:focus {
+            border-color: #007bff;
+            box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+            outline: none;
+        }
+        .form-row {
+            display: flex;
+            justify-content: space-between;
+        }
+        .form-row .form-group {
+            flex: 1;
+            margin-right: 10px;
+        }
+        .form-row .form-group:last-child {
+            margin-right: 0;
+        }
+        .submit-button {
+            padding: 15px;
+            background-color: #330be8;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+            margin-top: 10px;
+        }
+        .submit-button:hover {
+            background-color: #0e067c;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .submit-button:active {
+            background-color: #7e6bfa;
+        }
+        .submit-button:focus {
+            outline: none;
+            box-shadow: 0 0 5px rgba(202, 203, 244, 0.5);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="./exvech.html">Vehicles</a>
+        <a href="./rides.html">Rides</a>
+        <a href="./payments.html">Payments</a>
+    </div>
+
+    <div class="container">
+        <h1>Payment Information</h1>
+        <form action="/submit-payment" method="post">
+            <label for="name">Name on Card</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="card-number">Card Number</label>
+            <input type="number" id="card-number" name="card-number" required>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="expiry-date">Expiry Date</label>
+                    <input type="date" id="expiry-date" name="expiry-date" required>
+                </div>
+                <div class="form-group">
+                    <label for="cvv">CVV</label>
+                    <input type="number" id="cvv" name="cvv" required>
+                </div>
+            </div>
+
+            <label for="billing-address">Billing Address</label>
+            <input type="text" id="billing-address" name="billing-address" required>
+
+            <label for="city">City</label>
+            <input type="text" id="city" name="city" required>
+
+            <label for="state">State</label>
+            <input type="text" id="state" name="state" required>
+
+            <label for="zip">ZIP Code</label>
+            <input type="text" id="zip" name="zip" required>
+
+            <button type="submit" class="submit-button">Submit Payment</button>
+            <button type="submit" class="submit-button">Call To Owner</button>
+        </form>
+        </form>
+    </div>
+
+</body>
+</html>

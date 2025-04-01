@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Completed Rides</title>
+    <style>
+      body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+
+        }
+        .navbar {
+            background-color: #6b5bfd;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .navbar a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .ride-card {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .ride-image {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 10px;
+        }
+        .ride-details {
+            flex: 1;
+        }
+        .ride-details h2 {
+            margin-top: 0;
+            color: #333;
+        }
+        .ride-details p {
+            margin: 5px 0;
+            color: #666;
+        }
+        .details-button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .details-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="./exvech.html">Vehicles</a>
+        <a href="./rides.html">Rides</a>
+        <a href="./payments.html">Payments</a>
+    </div>
+
+    <div class="container">
+        <h1>Completed Rides</h1>
+        <div class="ride-card">
+            <img src="C:\Users\user\Downloads\1.jpg" alt="Completed Ride Image 1" class="ride-image">
+            <div class="ride-details">
+                <h2>Ride1</h2>
+                <p><strong>Type:</strong> Adventure</p>
+                <p><strong>Duration:</strong> 2 hours</p>
+                <p><strong>Date Completed:</strong> May 20, 2024</p>
+                <p><strong>Description:</strong> This thrilling adventure ride offered an unforgettable experience with breathtaking moments and excitement.</p>
+                <a href="#" class="details-button">View Details</a>
+            </div>
+        </div>
+        <div class="ride-card">
+            <img src="C:\Users\user\Downloads\images (2).jpg" alt="Completed Ride Image 2" class="ride-image">
+            <div class="ride-details">
+                <h2>Ride2</h2>
+                <p><strong>Type:</strong> Scenic</p>
+                <p><strong>Duration:</strong> 1.5 hours</p>
+                <p><strong>Date Completed:</strong> April 15, 2024</p>
+                <p><strong>Description:</strong> This scenic ride provided a relaxing journey through beautiful landscapes, perfect for nature lovers.</p>
+                <a href="#" class="details-button">View Details</a>
+            </div>
+        </div>
+        <div class="ride-card">
+            <img src="c:\Users\user\Downloads\images (3).jpg" alt="Completed Ride Image 3" class="ride-image">
+            <div class="ride-details">
+                <h2>Ride3</h2>
+                <p><strong>Type:</strong> Family</p>
+                <p><strong>Duration:</strong> 3 hours</p>
+                <p><strong>Date Completed:</strong> March 30, 2024</p>
+                <p><strong>Description:</strong> This family-friendly ride offered fun and entertainment for all ages, making it a perfect outing for families.</p>
+                <a href="#" class="details-button">View Details</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
